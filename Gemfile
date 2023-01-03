@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.4"
 
 gem 'storybook_rails'
 gem 'rack-cors'
+gem 'inline_svg'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
