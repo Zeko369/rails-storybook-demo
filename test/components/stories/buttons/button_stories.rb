@@ -9,9 +9,6 @@ class Buttons::ButtonStories < ActionView::Storybook::Stories
   end
 
   story(:primary) do
-    controls do
-      text(:button_text, "Primary")
-    end
   end
 
   story(:secondary) do
