@@ -1,0 +1,12 @@
+# frozen_string_literal: true
+
+class <%= class_name %>Stories < BaseStory
+  self.title = "Components/<%= class_name %>"
+
+  <%- stories.each do |story_name| -%>
+  story(:<%= story_name %>) do
+    controls do
+    end
+  end
+  <%- end -%>
+end
