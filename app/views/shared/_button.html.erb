@@ -1,0 +1,9 @@
+<% variant_class_map = {
+  primary: "button",
+  secondary: "button-secondary",
+  outline: "button-outline",
+} %>
+
+<button class="<%= variant_class_map[variant.to_sym] %>">
+  <%= button_text %>
+</button>
