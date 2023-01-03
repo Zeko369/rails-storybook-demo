@@ -6,10 +6,10 @@
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
-    "storybook:clean": "find ./test/components/stories -name '*.stories.json' -delete && rm -rf node_modules/.cache/storybook",
+    "storybook:clean": "find ./stories -name '*.stories.json' -delete && rm -rf node_modules/.cache/storybook",
     "storybook:start": "yarn storybook:clean && yarn storybook:write-json && start-storybook -p 8081",
     "storybook:write-json": "bundle exec rake storybook_rails:write_stories_json",
-    "storybook:watch": "chokidar '**/*_stories.rb' -c 'yarn storybook:write-json'"
+    "storybook:watch": "chokidar './stories/**/*_stories.rb' -c 'yarn storybook:write-json'"
   },
   "devDependencies": {
     "@storybook/addon-controls": "^6.5.15",
