@@ -1,4 +1,4 @@
-class Card::CardStories < ActionView::Storybook::Stories
+class Card::CardStories < BaseStory
   self.title = "Card"
 
   story(:card) do

@@ -1,8 +1,7 @@
 <%= stylesheet_link_tag "logout_button" %>
 
 <button type="button" class="log-out-btn">
-  {{/*  <i class="log-out-icon"></i>  */}}
-  <%= inline_svg_tag("log-out.svg") %>
+  <%= inline_svg_tag("log-out.svg", options={"class": "log-out-icon"}) %>
 
   Log out
 </button>

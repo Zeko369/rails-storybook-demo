@@ -1,5 +1,6 @@
-class LogoutButton::LogoutButtonStories < ActionView::Storybook::Stories
+class LogoutButton::LogoutButtonStories < BaseStory
   self.title = "Logout Button"
+
 
   story(:default) do
   end

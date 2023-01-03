@@ -1,4 +1,4 @@
-class ManyButtons::ManyButtonsStories < ActionView::Storybook::Stories
+class ManyButtons::ManyButtonsStories < BaseStory
   self.title = "Many Buttons"
 
   story(:default) do

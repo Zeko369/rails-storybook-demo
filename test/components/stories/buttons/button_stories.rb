@@ -1,4 +1,4 @@
-class Buttons::ButtonStories < ActionView::Storybook::Stories
+class Buttons::ButtonStories < BaseStory
   self.title = "Buttons"
 
   story(:generic) do
