@@ -14,6 +14,7 @@ module RailsStorybook
     config.load_defaults 7.0
 
     config.storybook_rails.stories_path = Rails.root.join("stories")
+    config.hosts << "web-production-1eef.up.railway.app"
 
     # Configuration for the application, engines, and railties goes here.
     #
