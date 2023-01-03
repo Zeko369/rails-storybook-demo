@@ -1,6 +1,13 @@
 class Buttons::ButtonStories < ActionView::Storybook::Stories
   self.title = "Buttons"
 
+  story(:generic) do
+    controls do
+      text(:button_text, "Generic")
+      select(:button_type, %w[primary secondary outline], "primary")
+    end
+  end
+
   story(:primary) do
     controls do
       text(:button_text, "Primary")

@@ -1,9 +1,11 @@
+<%= stylesheet_link_tag "button" %>
+
 <% variant_class_map = {
-  primary: "button",
+  primary: "button-primary",
   secondary: "button-secondary",
   outline: "button-outline",
 } %>
 
-<button class="<%= variant_class_map[variant.to_sym] %>">
+<button class="button <%= variant_class_map[variant.to_sym] %>">
   <%= button_text %>
 </button>

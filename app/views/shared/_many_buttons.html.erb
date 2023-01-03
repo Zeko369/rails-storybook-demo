@@ -1,0 +1,3 @@
+<% (1..10).each do |index| %>
+  <%= render partial: 'shared/button', locals: { variant: 'primary', button_text: index.to_s } %>
+<% end %>

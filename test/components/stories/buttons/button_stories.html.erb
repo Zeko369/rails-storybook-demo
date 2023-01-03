@@ -5,4 +5,8 @@
   } %>
 
 <%= render partial: 'shared/button',
-    locals: { variant: story_params[:story_name], button_text: story_params[:button_text] } %>
+    locals: {
+      variant: story_params[:button_type] || story_params[:story_name],
+      button_text: story_params[:button_text]
+    }
+%>
