@@ -16,6 +16,8 @@ module RailsStorybook
     config.storybook_rails.stories_path = Rails.root.join("stories")
     config.hosts << "web-production-1eef.up.railway.app"
 
+    config.autoload_paths << Rails.root.join('stories')
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
