@@ -6,8 +6,6 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  config.action_controller.asset_host = ENV['RAILWAY_STATIC_URL'] || "http://localhost:#{ENV.fetch("PORT") { 3001 }}"
-
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
@@ -34,6 +32,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
+  config.action_controller.asset_host = ENV['RAILWAY_STATIC_URL'] || "http://localhost:#{ENV.fetch("PORT") { 3001 }}"
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for Apache
