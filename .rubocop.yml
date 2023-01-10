@@ -12,15 +12,11 @@ AllCops:
     - "**/Rakefile"
   Exclude:
     - "bin/**/*"
-    - "db/migrate/**/201*.rb"
-    - "db/migrate/**/2020*.rb"
     - "db/schema.rb"
     - "node_modules/**/*"
     - "vendor/**/*"
     - "config/routes.rb"
-    - "spec/cassettes/*"
-    - "Capfile"
-  TargetRubyVersion: 3.1.0
+  TargetRubyVersion: 3.2.0
 
 Style/Lambda:
   EnforcedStyle: literal
@@ -188,4 +184,7 @@ Style/StringConcatenation:
   Enabled: true
 
 Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Lint/EmptyBlock:
   Enabled: false
