@@ -1,7 +1,7 @@
-require_relative "boot"
+require_relative 'boot'
 
-require "rails/all"
-require "action_view/storybook/engine"
+require 'rails/all'
+require 'action_view/storybook/engine'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -12,11 +12,11 @@ module RailsStorybook
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
-    config.storybook_rails.stories_path = Rails.root.join("stories")
+    config.storybook_rails.stories_path = Rails.root.join('stories')
     config.storybook_rails.show_stories = true # show in prod too
 
-    config.hosts += ["localhost", "0.0.0.0"]
-    config.hosts << "web-production-1eef.up.railway.app"
+    config.hosts += ['localhost', '0.0.0.0']
+    config.hosts << 'web-production-1eef.up.railway.app'
 
     config.autoload_paths << Rails.root.join('stories')
 

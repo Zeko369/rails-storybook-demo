@@ -1,28 +1,30 @@
-class Buttons::ButtonStories < BaseStory
-  self.title = "Buttons"
+module Buttons
+  class ButtonStories < BaseStory
+    self.title = 'Buttons'
 
-  story(:generic) do
-    controls do
-      text(:button_text, "Generic")
-      select(:button_type, %w[primary secondary outline], "primary")
+    story(:generic) do
+      controls do
+        text(:button_text, 'Generic')
+        select(:button_type, %w[primary secondary outline], 'primary')
+      end
     end
-  end
 
-  story(:primary) do
-    controls do
-      text(:button_text, "Primary")
+    story(:primary) do
+      controls do
+        text(:button_text, 'Primary')
+      end
     end
-  end
 
-  story(:secondary) do
-    controls do
-      text(:button_text, "Secondary")
+    story(:secondary) do
+      controls do
+        text(:button_text, 'Secondary')
+      end
     end
-  end
 
-  story(:outline) do
-    controls do
-      text(:button_text, "Outline")
+    story(:outline) do
+      controls do
+        text(:button_text, 'Outline')
+      end
     end
   end
 end

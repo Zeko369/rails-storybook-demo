@@ -1,7 +1,8 @@
-class LogoutButton::LogoutButtonStories < BaseStory
-  self.title = "Logout Button"
+module LogoutButton
+  class LogoutButtonStories < BaseStory
+    self.title = 'Logout Button'
 
-
-  story(:default) do
+    story(:default) do
+    end
   end
 end
